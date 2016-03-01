@@ -34,13 +34,14 @@ body {
     height: 350px;
     background-color: #8ECCE4;   
     border-radius: 5%;
-/*    margin: 0 auto;*/
     margin: auto;
 }
 
 .subtitleContainer {
     padding: 10px;
     text-align: center;
+    vertical-align: middle;
+    line-height: 90px;  
     display: inline-block;
     width: 220px;
     height: 105px;
@@ -50,6 +51,7 @@ body {
 
 #resume {
     background-color:beige;  
+
 }
 
 #github {
