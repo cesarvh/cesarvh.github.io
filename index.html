@@ -1,60 +1,37 @@
-<!DOCTYPE html>
-<html>
-<title> Cesar Villalobos Huizar </title>
-<head> 
-<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-79026731-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-</head>
-<body>
-    <div id="parent">
-        <div id="img-container">
-            <img src="https://avatars2.githubusercontent.com/u/9059527?v=3&s=400" id="me">
+{% extends "base.html" %}
+{% block title %}Nosedive - Inspired by Black Mirror S03E01{% endblock %}
+{% block header %}
+    {{ super() }}
+    <meta property="og:title" content="Nosedive - Inspired by Black Mirror S03E01"/>
+    <meta property="og:image" content="https://randomuser.me/api/portraits/lego/1.jpg"/>
+    <meta property="og:url" content="https://nosedive.space/"/>
+{% endblock %}
+{% block content %}
+    <body>
+    <div class="screen">
+        <login></login>
+        <div class="filter"></div>
+        <div class="menu">
+            <div class="bars"></div>
         </div>
-        <div id="main-content">
-            <div id="projects" class="subtitleContainer"> Projects </div>
-            <div id="github" class="subtitleContainer"> 
-                <a href="http://www.github.com/cesarvh"> Github </a>
-            </div>
-            <div id="resume" class="subtitleContainer"> 
-                <a href="src/resume.pdf"> Resume </a>
-            </div>
-            <div id="idk" class="subtitleContainer">
-                    Other stuff
-<!--                <a href="sierpinski.html"> upcoming view </a>-->
-            </div>
-        </div>
+        <img class="logo" src="https://randomuser.me/api/portraits/lego/1.jpg"
+             alt="You"/>
+        <p class="desc">Are you a 4.5? Find out.</p>
+        {#    <div class="signInInfo">#}
+        {#        <form>#}
+        {#            <input type="email" placeholder="Username"/>#}
+        {#            <input type="password" placeholder="Password"/>#}
+        {#        </form>#}
+        {#    </div>#}
+        <a href="/login">
+            <button class="signInButton" type="button">Sign In with Facebook</button>
+        </a>
+        <p class="note">This is an open-source parody project. <a href="https://github.com/alanzchen/nosedive/"><span>Fork me on Github</span></a>
+        </p>
+        <ul class="navigation">
+            <li class="menu-share share-home"><a href="#">Share this page!</a></li>
+            <li class="menu-fork-on-github"><a href="https://github.com/alanzchen/nosedive/">Fork me on Github</a></li>
+            <li class="menu-pro"><a href="https://en.wikipedia.org/wiki/Nosedive">Go <span>Pro</span></a></li>
+        </ul>
     </div>
-</body>
-
-</html>
-
-
-<!--
-<div class="profile" id="prof">
-    <div id="picture_container" class="profile">
-    <div id="picture">
-        <img src="https://avatars2.githubusercontent.com/u/9059527?v=3&s=400">
-    </div>
-    </div>
-    
-    <div id="content">Hello. My name is Cesar Villalobos, and I am currently a student at UC Berkeley studying Linguistics, Cognitive Science, and Computer Science. As you can probably see this is still under construction ^_^ Check back soon!  
-    </div>
-    
-    <div id="navBar">
-    <ul>
-        <li> Projects </li>
-        <li> About Me </li>
-        <li> Resume </li>
-        <li> Github </li>
-    </ul>
-    </div>
--->
+{% endblock %}
