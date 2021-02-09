@@ -256,7 +256,14 @@ textarea {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	padding: 5px;
-	background-color: greenyellow;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	text-align: center;
+    text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+
 }
 .col-12 .container h2 {
 	text-align: center;
@@ -4508,7 +4515,8 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row;
-	margin-left: 50%;
+/*	  padding-left: 300px;*/
+/*	margins-left: 50%;*/
   }
 .navbar.navbar-expand-lg.navbar-dark.bg-dark #navbarSupportedContent .navbar-nav {
 }
@@ -5219,8 +5227,11 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: green;
-  border-radius: 0.3rem;
+/*  background-color: green;*/
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("./../contactUsPic.jpg");
+	height: 500px;
+  background-size: cover;
+		border-radius: 0.3rem;
 }
 
 @media (min-width: 576px) {
