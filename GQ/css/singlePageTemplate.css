@@ -40,7 +40,6 @@ nav {
 	width: 50%;
 	text-align: right;
 	margin-right: 25px;
- 	height: 150px;
 }
 header nav ul {
 	list-style: none;
@@ -48,7 +47,7 @@ header nav ul {
 }
 nav ul li {
 	float: left;
-	color: green;
+	color: #FFFFFF;
 	font-size: 14px;
 	text-align: left;
 	margin-right: 25px;
@@ -57,7 +56,7 @@ nav ul li {
 	transition: all 0.3s linear;
 }
 ul li a {
-	color: green;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 ul li:hover a {
@@ -149,7 +148,7 @@ ul li:hover a {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(file:///images/parallax.png);
+	background-image: url(../images/parallax.png);
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -251,7 +250,7 @@ footer .footer_column p {
 	padding-top: 60px;
 	padding-bottom: 60PX;
 	margin-bottom: 0px;
-	background-image: url(file:///images/pattern.png);
+	background-image: url(../images/pattern.png);
 	background-repeat: repeat;
 }
 footer {
