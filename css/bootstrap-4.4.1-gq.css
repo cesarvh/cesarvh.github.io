@@ -38,7 +38,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: medium;
+    text-align: center;
 }
 
 html {
@@ -49,8 +51,15 @@ html {
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
+    display: block;
+    font-size: large;
 }
+.services-header {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 body {
   margin: 0;
@@ -642,12 +651,12 @@ pre code {
 }
 
 .row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .no-gutters {
@@ -9936,7 +9945,9 @@ button.bg-dark:focus {
 }
 
 .text-center {
-  text-align: center !important;
+    text-align: center !important;
+    max-height: none;
+    margin-top: 20px;
 }
 
 @media (min-width: 576px) {
